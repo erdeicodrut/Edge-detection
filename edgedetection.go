@@ -12,7 +12,7 @@ import (
 const QE = 30
 
 func main() {
-	photo, _ := os.Open("toDestroy.png")
+	photo, _ := os.Open("input.png")
 
 	pic, _ := png.Decode(photo)
 
@@ -67,7 +67,7 @@ func main() {
 		}
 	}
 
-	f, err := os.Create("ioana.png")
+	f, err := os.Create("output.png")
 	if err != nil {
 		log.Fatal(err)
 	}
